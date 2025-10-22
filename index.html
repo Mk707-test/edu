@@ -1,4 +1,4 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
@@ -19,12 +19,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://tracuu.vnedu.vn/kqhtv2/page/assets/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="https://tracuu.vnedu.vn/kqhtv2/page/assets/main.css?v=29082025">
-    <link rel="stylesheet" href="https://tracuu.vnedu.vn/kqhtv2/page/assets/intro/introjs.css?v=29082025">
+    <link rel="stylesheet" href="https://tracuu.vnedu.vn/kqhtv2/page/assets/main.css?v=22102025">
+    <link rel="stylesheet" href="https://tracuu.vnedu.vn/kqhtv2/page/assets/intro/introjs.css?v=22102025">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    </head>
+</head>
 <body>
 <style>
     #loading {
@@ -61,38 +61,380 @@
     }
 </style>
 <div id="loading" style="display:none">
-    <b id="loading-text" >Đang xử lý ...</b>
+    <b id="loading-text">Đang xử lý ...</b>
 </div>
 <img class="back-to-top" onclick="scrollToTop()" src="https://tracuu.vnedu.vn/kqhtv2/page/assets/imgs/back-to-top.png" />
 
 <div class="container-fluid result-learn">
     <div class="result-learn-body">
-      <div class="result-learn--header d-md-flex justify-content-between  align-items-center">
-        <div class=" d-flex learn-head--left justify-content-center  align-items-center">
+      <div class="result-learn--header d-md-flex justify-content-between align-items-center">
+        <div class="d-flex learn-head--left justify-content-center align-items-center">
           <p class="h5">Kết quả học tập: Nguyễn Ngọc Minh - Khối: 12</p>
         </div>
-        <div  style="display: none !important;"  class=" d-md-flex  learn-head--right justify-content-center  align-items-center">
+        <div style="display: none !important;" class="d-md-flex learn-head--right justify-content-center align-items-center">
           <form class="">
             <input type="hidden" type="text" name="ma_hoc_sinh" value="2302385962" />
             <label class="my-1 mr-2">Năm học</label>
             <select name="nam_hoc" class="custom-select-dat mr-sm-2" id="select_nam_hoc" onchange="reloadTraCuuByChangeValue(this.value);">
-</select>
-
+            </select>
             <label class="my-1 mr-2">Học kỳ</label>
             <select name="hoc_ky" class="custom-select-dat mr-sm-2" id="select_hoc_ky" onchange="reloadTraCuuByChangeValue(this.value, 1);">
-</select>
-
-
+            </select>
           </form>
         </div>
       </div>
       <div class="result-learn-margin">
-        
+        <div class="deligence">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 praise-mt">
+              <div class="media">
+                <img src="https://tracuu.vnedu.vn/kqhtv2/page/assets/imgs/book.png" class="align-self-center mr-3" alt="...">
+                <div class="media-body deligence-body">
+                  <span class="mt-0">TỔNG KẾT</span>
+                </div>
+              </div>
+              <div class="deligence-content row d-sm-flex d-md-flex flexm-md-row align-items-center">
+                <div class="col-md col-sm-12 col-lg d-flex flex-column praise-year-wrap">
+                  <div class="deligence-year--title praise-year d-flex flex-row align-items-center justify-content-between">
+                    <img src="https://tracuu.vnedu.vn/kqhtv2/page/assets/imgs/hat.png" alt="" />
+                    <div class="d-flex praise praise-year--tittle ml-20 align-items-center justify-content-between">
+                      <span>Kết quả học tập</span>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="deligence-year-content praise-year--content d-flex justify-content-between">
+                    <span>Học kỳ 1</span>
+                    <span></span>
+                  </div>
+                  <div class="deligence-year-content praise-year--content d-flex justify-content-between">
+                    <span>Học kỳ 2</span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="col-md col-sm-12 col-lg d-flex flex-column praise-year-wrap">
+                  <div class="deligence-year--title praise-year d-flex flex-row align-items-center justify-content-between">
+                    <img src="https://tracuu.vnedu.vn/kqhtv2/page/assets/imgs/hat-start.png" alt="" />
+                    <div class="d-flex praise praise-year--tittle ml-20 align-items-center justify-content-between">
+                      <span>Kết quả rèn luyện</span>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="deligence-year-content praise-year--content d-flex justify-content-between">
+                    <span>Học kỳ 1</span>
+                    <span></span>
+                  </div>
+                  <div class="deligence-year-content praise-year--content d-flex justify-content-between">
+                    <span>Học kỳ 2</span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="media">
+                <img src="https://tracuu.vnedu.vn/kqhtv2/page/assets/imgs/diligence.png" class="align-self-center mr-3" alt="...">
+                <div class="media-body deligence-body">
+                  <span class="mt-0">CHUYÊN CẦN</span>
+                </div>
+              </div>
+              <div class="deligence-content row d-sm-flex d-md-flex flexm-md-row">
+                <div class="col-md col-sm-12 col-lg deligence-first deligence-bg d-flex flex-column">
+                  <div class="deligence-year--title d-flex flex-row align-items-center justify-content-between">
+                    <span class="text-body mb-8">Nghỉ có phép</span>
+                    <div class="d-flex deligence-first-quantity ml-20 align-items-center justify-content-center">
+                      <span></span>
+                      <span>ngày</span>
+                    </div>
+                  </div>
+                  <div class="deligence-year-content d-flex justify-content-between">
+                    <span>Học kỳ 1</span>
+                    <span></span>
+                  </div>
+                  <div class="deligence-year-content d-flex justify-content-between">
+                    <span>Học kỳ 2</span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="col-md col-sm-12 col-lg deligence-last deligence-bg d-flex flex-column">
+                  <div class="deligence-year--title d-flex flex-row align-items-center justify-content-between">
+                    <span class="text-body mb-8">Nghỉ không phép</span>
+                    <div class="d-flex deligence-last-quantity ml-20 align-items-center">
+                      <span></span>
+                      <span>ngày</span>
+                    </div>
+                  </div>
+                  <div class="deligence-year-content d-flex justify-content-between">
+                    <span>Học kỳ 1</span>
+                    <span></span>
+                  </div>
+                  <div class="deligence-year-content d-flex justify-content-between">
+                    <span>Học kỳ 2</span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="praise-mt mt-20">
+          <div class="media">
+            <img src="https://tracuu.vnedu.vn/kqhtv2/page/assets/imgs/cup.png" class="align-self-center mr-3" alt="...">
+            <div class="media-body deligence-body">
+              <span class="mt-0">KHEN THƯỞNG VÀ DANH HIỆU</span>
+            </div>
+          </div>
+          <div class="deligence-content praise-content row d-sm-flex d-md-flex flexm-md-row align-items-center">
+            <div class="col-md col-sm-12 col-lg d-flex flex-row praise-cup">
+              <img src="https://tracuu.vnedu.vn/kqhtv2/page/assets/imgs/cup-gold.png" alt="" />
+              <div class="praise d-flex flex-column ml-20 justify-content-center">
+                <span>Danh hiệu</span>
+                <p></p>
+              </div>
+            </div>
+            <div class="col-md col-sm-12 col-lg d-flex flex-row praise-cup align-items-center">
+              <img src="https://tracuu.vnedu.vn/kqhtv2/page/assets/imgs/cup-gold.png" alt="" />
+              <div class="praise d-flex flex-column ml-20 justify-content-center">
+                <span>Khen thưởng thành tích đặc biệt</span>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="table-point">
-          <p style="font-size: 20px; color: red;">Thông báo: Phụ huynh học sinh chưa đăng ký tra cứu kết quả học tập. Vui lòng liên hệ nhà trường hoặc giáo viên chủ nhiệm để biết thêm thông tin.</p>
+          <div class="media">
+            <img src="https://tracuu.vnedu.vn/kqhtv2/page/assets/imgs/table-point.png" class="align-self-center mr-3" alt="...">
+            <div class="media-body deligence-body">
+              <span class="mt-0">BẢNG ĐIỂM</span>
+            </div>
+          </div>
+          <div class="table-point-content">
+            <p class="evaluate-title">ĐÁNH GIÁ BẰNG NHẬN XÉT KẾT HỢP ĐIỂM SỐ</p>
+            <table class="table table-striped">
+              <thead class="row table-point-display">
+                <tr>
+                  <th style="width: 24%;" scope="col">Môn học</th>
+                  <th style="width: 7%;" class="text-center" scope="col">HK1</th>
+                  <th style="width: 7%;" class="text-center" scope="col">ĐMT<br>HK1</th>
+                  <th style="width: 7%;" class="text-center" scope="col">HK2</th>
+                  <th style="width: 7%;" class="text-center" scope="col">ĐMT<br>HK2</th>
+                  <th style="width: 7%;" class="text-center" scope="col">TBM</th>
+                  <th style="width: 7%;" class="text-center" scope="col">ĐMT<br>CN</th>
+                  <th style="width: 15%;" class="text-center" scope="col">Thi lại</th>
+                  <th style="width: 40%;" scope="col">Nhận xét</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Toán học</th>
+                  <th class="text-center green-text">7.2</th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center orange-text"></th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Vật lí</th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center orange-text"></th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Sinh học</th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center orange-text"></th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Tin học</th>
+                  <th class="text-center green-text">10</th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center orange-text"></th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Ngữ văn</th>
+                  <th class="text-center green-text">6.75</th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center orange-text"></th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Lịch sử</th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center orange-text"></th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Tiếng anh</th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center orange-text"></th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Giáo dục quốc phòng và an ninh</th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center orange-text"></th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Giáo dục kinh tế và pháp luật</th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center orange-text"></th>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-                
+        <div style="color: red; font-style: italic; text-align: center;"><b>Lưu ý: </b>Điểm MT hoặc ĐMT là viết tắt của Điểm mục tiêu</div>
+        <div class="table-feedback">
+          <div class="media">
+          </div>
+          <div class="table-point-content">
+            <p class="evaluate-title">ĐÁNH GIÁ BẰNG NHẬN XÉT</p>
+            <table class="table table-striped">
+              <thead class="row table-point-display">
+                <tr>
+                  <th style="width: 24%;" scope="col">Môn học</th>
+                  <th style="width: 7%;" class="text-center" scope="col">HK1</th>
+                  <th style="width: 7%;" class="text-center" scope="col">HK2</th>
+                  <th style="width: 7%;" class="text-center" scope="col">TBM</th>
+                  <th style="width: 15%;" class="text-center" scope="col">Thi lại</th>
+                  <th style="width: 40%;" scope="col">Nhận xét</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Giáo dục thể chất</th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Nội dung giáo dục của địa phương</th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Hoạt động trải nghiệm, hướng nghiệp</th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <th class="text-center green-text"></th>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="result-learn--footer">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="conclude d-flex align-items-center">
+                <img src="https://tracuu.vnedu.vn/kqhtv2/page/assets/imgs/cup-start.png" alt="" />
+                <span>XÉT HOÀN THÀNH CHƯƠNG TRÌNH LỚP HỌC</span>
               </div>
+              <div class="conclude-comment">
+                <p></p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="conclude d-flex align-items-center">
+                <img src="https://tracuu.vnedu.vn/kqhtv2/page/assets/imgs/teacher.png" alt="" />
+                <span>NHẬN XÉT CỦA GVCN</span>
+              </div>
+              <div class="conclude-comment">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="retest d-none">
+          <div class="media">
+            <img src="https://tracuu.vnedu.vn/kqhtv2/page/assets/imgs/book.png" class="align-self-center mr-3" alt="...">
+            <div class="media-body deligence-body">
+              <span class="mt-0">THI LẠI / RÈN LUYỆN HÈ</span>
+            </div>
+          </div>
+          <div class="row retest-wrap">
+            <div class="col-lg-4 col-md-4 col-sm-12 d-flex">
+              <img src="https://tracuu.vnedu.vn/kqhtv2/page/assets/imgs/hat.png" alt="" />
+              <div class="d-flex flex-column justify-content-center retest-content">
+                <span>Kết quả học tập</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 mts-20 d-flex">
+              <img src="https://tracuu.vnedu.vn/kqhtv2/page/assets/imgs/hat-start.png" alt="" />
+              <div class="d-flex flex-column justify-content-center retest-content">
+                <span class="retest-color">Kết quả rèn luyện</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 mts-20 d-flex">
+              <img src="https://tracuu.vnedu.vn/kqhtv2/page/assets/imgs/Group 22977.png" alt="" />
+              <div class="d-flex flex-column justify-content-center retest-content">
+                <span class="retest-color-1">Xét hoàn thành chương trình lớp học sau Thi lại/Rèn luyện hè</span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+</div>
+<div style="padding-top: 50px;"></div>
+<script src="https://tracuu.vnedu.vn/kqhtv2/page/assets/jquery/jquery.slim.min.js"></script>
+<script src="https://tracuu.vnedu.vn/kqhtv2/page/assets/jquery/jquery-3.6.4.min.js"></script>
+<script src="https://tracuu.vnedu.vn/kqhtv2/page/assets/jquery/bootstrap.bundle.min.js"></script>
+<script src="https://tracuu.vnedu.vn/kqhtv2/page/assets/index.min.js?c=22102025"></script>
+</body>
+</html>
